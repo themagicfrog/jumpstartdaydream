@@ -8,13 +8,13 @@ body {
 
 header {
   text-align: center;
-  padding: 0;
+  padding: 4em 0 0 0;
   background-color: #152c6f;
   color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -36,6 +36,19 @@ header h1:hover {
   text-shadow: 0 0 30px rgba(255, 255, 255, 1), 0 0 60px rgba(255, 255, 255, 0.8), 0 0 90px rgba(255, 255, 255, 0.6);
 }
 
+h1.smaller {
+  font-size: 60px;
+  margin: 0.3em 0;
+  line-height: 1.1;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.4);
+  transition: all 0.3s ease;
+}
+
+h1.smaller:hover {
+  animation: flicker 0.5s ease-in-out infinite;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.6);
+}
+
 @keyframes flicker {
   0%, 100% {
     text-shadow: 0 0 30px rgba(255, 255, 255, 1), 0 0 60px rgba(255, 255, 255, 0.8), 0 0 90px rgba(255, 255, 255, 0.6);
@@ -53,7 +66,7 @@ header h1:hover {
 
 header p {
   font-size: 2vw;
-  margin: 0.5em 0 0.2em 0;
+  margin: 0.2em 0 0.2em 0;
 }
 
 header h2 {
@@ -65,7 +78,7 @@ header h2 {
   text-align: left;
   padding: 1em 4em;  background-color: #100a52;
   color: white;
-  font-size: 27px;
+  font-size: 32px;
   margin: 2em;
 }
 
@@ -180,7 +193,7 @@ button:hover {
   max-width: 90vw;
   width: 100%;
   height: auto;
-  margin: 0 0 0.2em 0;
+  margin: 0 0 0.1em 0;
   display: block;
   filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 40px rgba(255, 255, 255, 0.6));
   animation: titleFloat 3s ease-in-out infinite;
@@ -220,6 +233,28 @@ button:hover {
 
 header button {
   margin-top: 1.5em;
+}
+
+.big-button {
+  padding: 1.5em 3em !important;  
+  font-size: 1.8em !important; 
+  margin: 1em 0; 
+  border-radius: 10px;
+  font-family: "Jersey 25", sans-serif;
+  background-color: #d73d7b;
+  color: white;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 20px rgba(215, 61, 123, 0.6), 0 0 40px rgba(215, 61, 123, 0.4);
+  animation: float 3s ease-in-out infinite;
+  transition: all 0.3s ease;
+}
+
+.big-button:hover {
+  background-color: #a62f5f;
+  box-shadow: 0 0 30px rgba(215, 61, 123, 0.9), 0 0 60px rgba(215, 61, 123, 0.7), 0 0 90px rgba(215, 61, 123, 0.5);
+  transform: translateY(-5px) scale(1.05);
+  filter: brightness(1.2);
 }
 
 .gallery-scroll {
@@ -267,7 +302,7 @@ header button {
 }
 
 .godot-logo {
-  width: 120px;
+  width: 180px;
   height: auto;
 }
 
@@ -293,8 +328,49 @@ footer {
 
 footer p {
   margin: 0;
-  font-size: 18px;
+  font-size: 28px;
   opacity: 0.9;
+}
+
+.ship-format-dropdown {
+  margin: 0.4em 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.dropdown-header {
+  background-color: #d73d7b;
+  color: white;
+  padding: 0.4em 1em;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.dropdown-header:hover {
+  background-color: #a62f5f;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #1e3a8a;
+}
+
+.dropdown-content.show {
+  display: block;
+}
+
+.format-box {
+  background-color: #152c6f;
+  margin: 0.4em;
+  padding: 0.6em;
+  border-radius: 6px;
+  font-size: 0.85em;
+  line-height: 1.5;
+}
+
+.format-box p {
+  margin: 0.2em 0;
 }
 
 @media (max-width: 600px) {
@@ -374,6 +450,15 @@ footer p {
     padding: 1em 2em;
     width: 80vw;
     max-width: 350px;
+    margin: 1.5em auto;
+    display: block;
+  }
+  
+  .big-button {
+    font-size: 7vw !important;
+    padding: 1.2em 2.5em !important;
+    width: 85vw !important;
+    max-width: 400px !important;
     margin: 1.5em auto;
     display: block;
   }

@@ -36,18 +36,42 @@
       </iframe>
     </div>
     
+    <h2>Ship Your Project</h2>
+    <p>Ship your project in the <a href="https://hackclub.slack.com/archives/C098A4657FT" target="_blank">#jumpstart-daydream</a> channel in the format below. You'll need the link to this message for the submission form.</p>
+    <p>Then submit your game the form below!</p>
+    
+    <div class="ship-format-dropdown">
+      <div class="dropdown-header" onclick="toggleShipFormat()">
+        <span>▼ Ship Message Format</span>
+      </div>
+      <div class="dropdown-content" id="shipFormatContent">
+        <div class="format-box">
+          <p><strong>Game Name</strong></p>
+          <p><strong>Itch.io Link</strong></p>
+          <p><strong>Github Link</strong></p>
+          <p><strong>Description/Features</strong></p>
+          <p><strong>&lt;attach a short screen recording of your game&gt;</strong></p>
+        </div>
+      </div>
+    </div>
+    
   </section>
 
   <section id="end">
-    <h1>CONGRATS! IT'S TIME TO</h1>
-    <h1>SUBMIT YOUR PROJECT!</h1>
-    <button onclick="window.location.href='https://forms.hackclub.com/jumpstart'">GAME SUBMISSION FORM (CLOSED) PLEASE SUBMIT TO V2</button>
+    <h1>CONGRATS! TIME TO SUBMIT!</h1>
+    <button class="big-button" onclick="window.location.href='https://forms.hackclub.com/jumpstartdaydream'">SUBMISSION FORM</button>
   </section>
 
-  
+  <section id="info">
+    <h2>What's Next?</h2>
+    <p>Once your game is approved, you become eligible to run a Jumpstart workshop at your Daydream and get stickersheets for the attendees at your event! Everyone loves stickers :) </p>
+    <p>Make sure to indicate that you are going to run one in the form and I'll be reaching out with more support and resources closer to the event.</p>
+    <img src="assets/jumpstartstickers.png" class="rounded-glow" style="display: block; margin: 2em auto 2em auto;" />
+  </section>
 
   <footer>
-    <p>© Made with 💖 by Estella Gu</p>
+    <p>© Made with 💖 by <a href="https://github.com/themagicfrog" target="_blank">Estella Gu</a></p>
+    <p>Contact: <a href="https://hackclub.slack.com/team/U06UYA4AH6F" target="_blank">@magicfrog</a> or <a href="https://hackclub.slack.com/archives/C098A4657FT" target="_blank">#jumpstart-daydream</a></p>
   </footer>
 
   <script src="script.js"></script>

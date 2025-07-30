@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>JUMPSTART V1</title>
+  <title>JUMPSTART x DAYDREAM</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="assets/j-favicon.png">
   <link rel="stylesheet" href="style.css" />
@@ -13,9 +13,10 @@
   <header>
     <img src="assets/jumpstart_title.gif" class="title-animation">
     <p>a Hack Club YSWS</p>
-    <h2>Are you doing <a href="https://jumpstart.hackclub.com/" target="_blank">Jumpstart V2</a>? Use the guides and resources</h2>
-    <h2>below to get started making a platformer in Godot to submit to Jumpstart V2!</h2>
-    <p>Submissions for V1 have closed for general people (build a platformer in Godot from June 26th to July 7th, earn stickers)</p>
+    <h1 class="smaller">BUILD A GODOT PLATFORMER GAME!</h1>
+    <h2>Run a workshop at your <a href="https://daydream.hackclub.com/" target="_blank">Daydream</a>, get stickers for your event!</h2>
+    <h2>Scroll down for instructions and guides.</h2>
+    <h2>Join <a href="https://hackclub.slack.com/archives/C098A4657FT" target="_blank">#jumpstart-daydream</a> on Slack.</h2>
     <div class="scroll-arrow" onclick="scrollToInfo()" tabindex="0" aria-label="Scroll down" role="button">
       <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 20L24 32L36 20" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
@@ -25,21 +26,36 @@
   <section id="info">
     <h2>How Does This Work?</h2>
     <div class="step-container">
-      <div class="step-content">
-        <h3>1. Create a Platformer Game using Godot</h3>
-        <p><a href="https://godotengine.org/" target="_blank">Godot</a> is a free game engine you can use to create games! Use the guide on the right to create your 2D platformer. Also, learn to setup a <a href="https://github.com/" target="_blank">Github</a> repo for your project using <a href="https://www.youtube.com/watch?v=dKqOTx06_Cw" target="_blank">this</a> video. </p>
-      </div>
-      <div class="step-image">
-        <img src="assets/godot.png" class="godot-logo"/>
-      </div>
-      <button onclick="window.location.href='guide.html'">GODOT GUIDE</button>
+                      <div class="step-content">
+          <h3>1. Create a Platformer Game using Godot</h3>
+          <p><a href="https://godotengine.org/" target="_blank">Godot</a> is a free game engine you can use to create games. </p>
+          <p>Once you download Godot, setup Godot Hackatime before you start building your game. Follow <a href="https://hackatime.hackclub.com/docs/editors/godot" target="_blank">this</a> guide</a>. (VERY IMPORTANT!)</p>
+          <p>Then, follow along with the 10-minute speedrun tutorial below or use the written guide to create a base 2D platformer game.</p>
+          <div style="text-align: center; margin: 2em 0;">
+            <iframe 
+              width="800" 
+              height="450" 
+              src="https://www.youtube.com/embed/6V6sAGBowL0" 
+              title="Create a Platformer Game using Godot" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div style="text-align: center; margin: 0.5em 0;">
+            <button onclick="window.location.href='guide.html'">GODOT GUIDE</button>
+          </div>
+        </div>
     </div>
     <div class="step-container">
       <div class="step-content">
         <h3>2. Make Your Game Unique</h3>
-        <p>Create a backstory or choose a theme or style for your platformer. Then, keep adding on to your game and adding new features to make it better! Look at the some of the other platformer games made by Hack Clubbers with Godot below! You can add your own story, background, and more.</p>
+        <p>Choose a theme/style for your platformer. Add new features to make your game better! You can add your own story, background, assets, and more. For inspiration, look at the some of the other platformer games made by Hack Clubbers with Godot below!</p>
       </div>
-      <button onclick="window.location.href='next.html'">MORE IDEAS</button>
+      <div class="step-image" style="display: flex; flex-direction: column; align-items: center; gap: 0;">
+        <button onclick="window.location.href='next.html'">MORE IDEAS</button>
+        <img src="assets/heidigame.png" class="godot-logo"/>
+      </div>
     </div>
     <div class="gallery-scroll">
       <div class="gallery-card">
@@ -68,27 +84,47 @@
         <p>Made by Julia Nadolska, you can play it at <a href="https://supertik.itch.io/platformlands" target="_blank">here</a>!</p>
       </div>
     </div>
-    <div class="step-container-reverse">
-      <div class="step-image">
-        <img src="assets/itchio.png" class="itchio-logo"/>
-      </div>
+    <div class="step-container">
       <div class="step-content">
         <h3>3. Publish your Project to Itch.io</h3>
         <p><a href="https://itch.io/" taraget="_blank">Itch.io</a> is a website for people to share and play video games. Make an account, export your game, and publish it to the world. Use <a href="https://www.youtube.com/watch?v=9-lBiLMWynE" target="_blank">this</a> video to help you.</p>
       </div>
-      <button onclick="window.location.href='submit.html'">ITCH.IO GUIDE</button>
-    </div>
-    <div class="step-container">
-      <div class="step-content">
-        <h3>4. Ship your Project and Share it</h3>
-        <p>Share your amazing project in the #ship channel and the #jumpstart channel. You can share the Itch.io link for your game with family, friends, and anyone else.</p>
+      <div class="step-image" style="display: flex; flex-direction: column; align-items: center; gap: 0;">
+        <img src="assets/itchio.png" class="itchio-logo"/>
+        <button onclick="window.location.href='submit.html'">ITCH.IO GUIDE</button>
       </div>
-      <button onclick="window.open('https://forms.hackclub.com/jumpstart', '_blank')">SUBMISSION FORM (CLOSED)</button>
     </div>
     <div class="step-container">
       <div class="step-content">
-        <h3>5. (Submissions Closed for V1, submit to <a href="https://jumpstart.hackclub.com/" target="_blank">V2</a>) Earn Prizes! CONGRATS!</h3>
-        <p>You will get the stickers below if you submit before July 7th and if you are particpating in Athena Award, also Artifacts! Congratulations! </p>
+        <h3>4. Ship your Project (CONGRATS!!)</h3>
+        <p>Ship your project in the <a href="https://hackclub.slack.com/archives/C098A4657FT" target="_blank">#jumpstart-daydream</a> channel in the format below.</p>
+        <p>Then submit your game the form on the right!</p>
+        
+        <div class="ship-format-dropdown">
+          <div class="dropdown-header" onclick="toggleShipFormat()">
+            <span>▼ Ship Message Format</span>
+          </div>
+          <div class="dropdown-content" id="shipFormatContent">
+            <div class="format-box">
+              <p><strong>Game Name</strong></p>
+              <p><strong>Itch.io Link</strong></p>
+              <p><strong>Github Link</strong></p>
+              <p><strong>Description/Features</strong></p>
+              <p><strong>&lt;attach a short screen recording of your game&gt;</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="step-image" style="display: flex; flex-direction: column; align-items: center; gap: 0;">
+        <img src="assets/diamond.png" class="godot-logo"/>
+        <button onclick="window.open('https://forms.hackclub.com/jumpstartdaydream', '_blank')">SUBMISSION FORM</button>
+      </div>
+    </div>
+    <div class="step-container">
+      <div class="step-content">
+        <h3>5. Run a Jumpstart workshop at your Daydream, get stickers!</h3>
+        <p>Now that you're experienced, you can run a Jumpstart workshop at your Daydream and we'll ship you the stickersheets below for your event. </p>
+        <p>Make sure to indicate that you are going to run this in the form and I'll be reaching out with more support and resources closer to the event.</p>
         <img src="assets/jumpstartstickers.png" class="rounded-glow" style="display: block; margin: 2em auto 2em auto;" />
       </div>
     </div>
@@ -96,12 +132,15 @@
 
   <section id="end">
     <h1>JUMPSTART NOW</h1>
-    <p>Build a Godot platformer, earn stickers and other prizes!</p>
-    <button onclick="window.location.href='guide.html'">GET STARTED</button>
+    <p>Build a Godot platformer!</p>
+    <p>Run a workshop at your Daydream,</p>
+    <p>get stickers for your event!</p>
+    <button class="big-button" onclick="window.location.href='guide.html'">GET STARTED</button>
   </section>
 
   <footer>
-    <p>© Made with 💖 by Estella Gu</p>
+    <p>Made with ❤ by <a href="https://github.com/themagicfrog" target="_blank">Estella Gu</a>.</p>
+    <p>Contact: <a href="https://hackclub.slack.com/team/U06UYA4AH6F" target="_blank">@magicfrog</a> or <a href="https://hackclub.slack.com/archives/C098A4657FT" target="_blank">#jumpstart-daydream</a></p>
   </footer>
 
   <script src="script.js"></script>
