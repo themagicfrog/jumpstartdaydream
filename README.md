@@ -1,10 +1,5 @@
-# Jumpstart VERION 1
+# Jumpstart Daydream
 
-### submissions have closed 
-
-# Create a platformer in Godot, earn stickers!!
+# Create a platformer in Godot, run a Jumpstart workshop at Daydream, get stickers for your event!
 
 You can find multiple guides on the website, some demoes of other Godot platformers, and instructions on submitting. 
-I decided to make this YSWS because of the game I made in March/April for Juice. I spent about an week building this website and launching it!
-I hope you do it!! 
-Ending Sunday July 6th.
