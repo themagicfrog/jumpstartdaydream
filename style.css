@@ -257,6 +257,14 @@ header button {
   filter: brightness(1.2);
 }
 
+.choice-button {
+  width: 100% !important;
+  padding: 1em !important;
+  font-size: 1.75em !important;
+  margin-bottom: 1em !important;
+  text-align: center !important;
+}
+
 .gallery-scroll {
   display: flex;
   overflow-x: auto;

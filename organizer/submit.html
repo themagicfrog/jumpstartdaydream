@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SUBMIT YOUR PROJECT (V1 SUBMISSIONS NOW CLOSED)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="../assets/j-favicon.png">
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>SUBMIT YOUR PROJECT</h1>
+    <h2>Publish your game on itch.io!</h2>
+    <img src="../assets/itchiodemo.gif" style="padding: 2em 0;">
+    <div class="scroll-arrow" onclick="scrollToInfo()" tabindex="0" aria-label="Scroll down" role="button">
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 20L24 32L36 20" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </header>
+  <section id="info">
+    <h2>How to Get Your Game on itch.io</h2>
+    <p>Watch this video to learn how to export your Godot game and publish it on itch.io for the world to play!</p>
+    
+    <div style="text-align: center; margin: 2em 0;">
+      <iframe 
+        width="800" 
+        height="450" 
+        src="https://www.youtube.com/embed/9-lBiLMWynE" 
+        title="How to get your game on itch.io" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+      </iframe>
+    </div>
+    
+    <h2>Ship Your Project</h2>
+    <p>Ship your project in the <a href="https://hackclub.slack.com/archives/C098A4657FT" target="_blank">#jumpstart-daydream</a> channel in the format below. You'll need the link to this message for the submission form.</p>
+    <p>Then submit your game the form below!</p>
+    
+    <div class="ship-format-dropdown">
+      <div class="dropdown-header" onclick="toggleShipFormat()">
+        <span>▼ Ship Message Format</span>
+      </div>
+      <div class="dropdown-content" id="shipFormatContent">
+        <div class="format-box">
+          <p><strong>Game Name</strong></p>
+          <p><strong>Itch.io Link</strong></p>
+          <p><strong>Github Link</strong></p>
+          <p><strong>Description/Features</strong></p>
+          <p><strong>&lt;attach a short screen recording of your game&gt;</strong></p>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+</section>
+
+<section id="checklist" style="background-color: #1e3a8a; padding: 2em 4em; margin: 2em; border-radius: 10px; border: 2px dotted #87CEEB;">
+<h2 style="font-size: 2.5em;">Submission Checklist</h2>
+<p style="font-size: 1.5em;">Make sure you have everything ready before submitting!</p>
+
+<div style="text-align: left; margin: 2em 0;">
+  <div style="margin: 1em 0; display: flex; align-items: center; gap: 1em;">
+    <input type="checkbox" id="check1" style="transform: scale(1.5);">
+    <label for="check1" style="font-size: 1.6em;">Your game is published on itch.io and the link works. Make sure it is public!</label>
+  </div>
+  
+  <div style="margin: 1em 0; display: flex; align-items: center; gap: 1em;">
+    <input type="checkbox" id="check2" style="transform: scale(1.5);">
+    <label for="check2" style="font-size: 1.6em;">Your code is on GitHub and the repository is public. There should be .gd and .tscn files in it.</label>
+  </div>
+  
+  <div style="margin: 1em 0; display: flex; align-items: center; gap: 1em;">
+    <input type="checkbox" id="check3" style="transform: scale(1.5);">
+    <label for="check3" style="font-size: 1.6em;">You've tested your game and it runs without any errors.</label>
+  </div>
+
+  <div style="margin: 1em 0; display: flex; align-items: center; gap: 1em;">
+    <input type="checkbox" id="check3" style="transform: scale(1.5);">
+    <label for="check3" style="font-size: 1.6em;">You've posted to the #jumpstart-daydream channel in Hack Club Slack.</label>
+  </div>
+  
+</div>
+</div>
+
+<p style="font-style: italic; margin-top: 2em;">Once you've checked off all the items above, you're ready to submit!</p>
+</section>
+  <section id="end">
+    <h1>CONGRATS! TIME TO SUBMIT!</h1>
+    <button class="big-button" onclick="window.location.href='https://forms.hackclub.com/jumpstartdaydream'">SUBMISSION FORM</button>
+  </section>
+
+  <section id="info">
+    <h2>What's Next?</h2>
+    <p>Once your game is approved, you'll get an approval message through Slack in about 1 week. You'll also get a cool organizer badge at your Daydream! Now you can also help your attendees build their own platformer games!</p>
+    <img src="../assets/jumpstartstickers.png" class="rounded-glow" style="display: block; margin: 2em auto 2em auto;" />
+  </section>
+
+  <footer>
+    <p>© Made with 💖 by <a href="https://github.com/themagicfrog" target="_blank">Estella Gu</a></p>
+    <p>Contact: <a href="https://hackclub.slack.com/team/U06UYA4AH6F" target="_blank">@magicfrog</a> or <a href="https://hackclub.slack.com/archives/C098A4657FT" target="_blank">#jumpstart-daydream</a></p>
+  </footer>
+
+  <script src="../script.js"></script>
+  <script>
+    function scrollToInfo() {
+      const infoSection = document.getElementById('info');
+      if (infoSection) {
+        infoSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
+</body>
+</html> 
