@@ -11,8 +11,8 @@
 </head>
 <body>
   <header>
-    <h1>GODOT PLATFORMER GUIDE IN 13 STEPS</h1>
-    <img src="../assets/startdemo.gif">
+    <h1>GODOT PLATFORMER RESOURCES</h1>
+    <img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/5df8886631d577b1d8a91785645ad9ba382885ba_jumpstart-cover.png" style="width: 100%; max-width: 750px; height: auto; display: block; margin: 0 auto;">
     <div class="scroll-arrow" onclick="scrollToInfo()" tabindex="0" aria-label="Scroll down" role="button">
       <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 20L24 32L36 20" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
@@ -20,16 +20,54 @@
     </div>
   </header>
   <section id="info">
+    <h2>Resources</h2>
+    <p>Get started with one of these guides:</p>
+    
+    <div style="display: flex; gap: 2em; margin: 2em 0; flex-wrap: wrap;">
+      <!-- Slide Series Column -->
+      <div style="flex: 1; min-width: 300px;">
+        <h3 style="text-align: center; margin-bottom: 1em;">SLIDESHOW SERIES</h3>
+        <div style="display: flex; flex-direction: column; gap: 0.5em;">
+          <button onclick="window.open('https://www.figma.com/deck/j0xld5JL1PLVmndZPV6YSi/Godot-Platformer-Guide--Jumpstart-?node-id=1-42&t=EfLY8yLImpG0G8Ps-1', '_blank')" style="padding: 0.6em 1.5em; font-size: 1.1em; font-family: 'Jersey 25', sans-serif; background-color: #d73d7b; color: white; border: none; border-radius: 10px; cursor: pointer; box-shadow: 0 0 20px rgba(215, 61, 123, 0.6), 0 0 40px rgba(215, 61, 123, 0.4); animation: float 3s ease-in-out infinite; transition: all 0.3s ease;">
+            Slideshow Presentation
+          </button>
+        </div>
+        
+        <h3 style="text-align: center; margin: 1.5em 0 1em 0;">WRITTEN SERIES</h3>
+        <div style="display: flex; flex-direction: column; gap: 0.5em;">
+          <button onclick="scrollToGuide()" style="padding: 0.6em 1.5em; font-size: 1.1em; font-family: 'Jersey 25', sans-serif; background-color: #d73d7b; color: white; border: none; border-radius: 10px; cursor: pointer; box-shadow: 0 0 20px rgba(215, 61, 123, 0.6), 0 0 40px rgba(215, 61, 123, 0.4); animation: float 3s ease-in-out infinite; transition: all 0.3s ease;">
+            Step-by-Step Guide
+          </button>
+        </div>
+      </div>
+      
+      <!-- Video Series Column -->
+      <div style="flex: 1; min-width: 300px;">
+        <h3 style="text-align: center; margin-bottom: 1em;">VIDEO SERIES</h3>
+        <div style="display: flex; flex-direction: column; gap: 0.1em;">
+          <button onclick="window.open('https://www.youtube.com/watch?v=6V6sAGBowL0', '_blank')" style="padding: 0.6em 1.5em; font-size: 1.1em; font-family: 'Jersey 25', sans-serif; background-color: #d73d7b; color: white; border: none; border-radius: 10px; cursor: pointer; box-shadow: 0 0 20px rgba(215, 61, 123, 0.6), 0 0 40px rgba(215, 61, 123, 0.4); animation: float 3s ease-in-out infinite; transition: all 0.3s ease;">
+            Create a Platformer Game
+          </button>
+          <button onclick="window.open('https://www.youtube.com/watch?v=dKqOTx06_Cw', '_blank')" style="padding: 0.6em 1.5em; font-size: 1.1em; font-family: 'Jersey 25', sans-serif; background-color: #d73d7b; color: white; border: none; border-radius: 10px; cursor: pointer; box-shadow: 0 0 20px rgba(215, 61, 123, 0.6), 0 0 40px rgba(215, 61, 123, 0.4); animation: float 3s ease-in-out infinite; transition: all 0.3s ease;">
+            Put Your Game on GitHub
+          </button>
+          <button onclick="window.open('https://www.youtube.com/watch?v=9-lBiLMWynE', '_blank')" style="padding: 0.6em 1.5em; font-size: 1.1em; font-family: 'Jersey 25', sans-serif; background-color: #d73d7b; color: white; border: none; border-radius: 10px; cursor: pointer; box-shadow: 0 0 20px rgba(215, 61, 123, 0.6), 0 0 40px rgba(215, 61, 123, 0.4); animation: float 3s ease-in-out infinite; transition: all 0.3s ease;">
+            Publish on Itch.io
+          </button>
+        </div>
+      </div>
+    </div>
+    
     <h2>1. Download Godot and Create Your Project</h2>
-    <p>Godot is a free, open source game engine that you will be using to make your game. It's very easy to learn as a beginner! </p>
-    <p>This guide will take about 20-30 minutes. If you have any problems or questions, feel free to email estella@hackclub.com. </p>
-    <p>First, go to <a href="https://godotengine.org/" target="_blank">godotengine.org</a> and download it on your computer. If you cannot install it, you can also use the web editor <a href="https://editor.godotengine.org/" target="_blank">editor.godotengine.org</a>.
+    <p>Godot is a free, easy-to-learn game engine.</p>
+    <p>This guide takes about 20-30 minutes. If you have any problems or questions, feel free to email estella@hackclub.com. </p>
+    <p>Go to <a href="https://godotengine.org/" target="_blank">godotengine.org</a> and download. If you cannot install it, you can also use the web editor <a href="https://editor.godotengine.org/" target="_blank">editor.godotengine.org</a>.
     </p>
     <img src="../assets/godotdownload.gif"/>
-    <p>Click the Create New Project Button, and name your platformer. Create a new folder that will have all your future Godot games. Use the Mobile renderer. Finally, click Create at the bottom.</p>
+    <p>Click the Create New Project Button, and name your platformer. Use the Mobile renderer. Click Create at the bottom.</p>
     <img src="../assets/makeproject.gif"/>
-    <p>Setup a <a href="https://github.com/" target="_blank">Github</a> repo for your project using the video below! You can use Github Desktop (what the video shows, may be easier for beginners) or just the command line. You'll need a Github repo to submit your project. </p>
-    <p>Once make one, remember to make frequent commits to your repo as you work on your game!</p>
+    <p>Setup a <a href="https://github.com/" target="_blank">Github</a> repository for your project using the video below. You can use Github Desktop (as shown in video) or the command line. You need a Github repo to submit your project. </p>
+    <p>Once make one, remember to make frequent commits to your repo as you work on your game.</p>
     <div style="text-align: center; margin: 2em 0;">
       <iframe 
         width="800" 
@@ -46,7 +84,7 @@
     <img src="../assets/makingscene.gif"/>
     <p>Save the scene, and call it main.tscn. You will see it show up in the FileSystem below the Scene area. Later in your project, you will use this area to find different scenes, scripts, and assets.</p>
     <h2>3. Creating Your Character</h2>
-    <p>In the top bar, change to 2D view instead of 3D view. The faint purple-outlined rectangle near the center is the view of the game. Click CTRL-A or use the plus button to create a new node, CharacterBody2D. Name it Player.</p>
+    <p>In the top bar, change to 2D view. The purple-outlined rectangle near the center is the view of the game. Click CTRL-A or use the plus button to create a new node, CharacterBody2D. Name it Player.</p>
     <img src="../assets/makingplayer.gif"/>
     <p>Sprite2D is a node that displays textures (images). Create a Sprite2D node under Player. On the right bar, you will see the Texture and that it is empty. In the FileSystem, there is icon.svg of the Godot logo. Drag it to the texture box. Then you can resize it however you want. </p>
     <img src="../assets/makingsprite2d.gif"/>
@@ -112,6 +150,14 @@
       const infoSection = document.getElementById('info');
       if (infoSection) {
         infoSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+    
+    function scrollToGuide() {
+      // Scroll to step 2 of the guide (Create Your Scene)
+      const step2 = document.querySelector('h2:nth-of-type(2)');
+      if (step2) {
+        step2.scrollIntoView({ behavior: 'smooth' });
       }
     }
   </script>
