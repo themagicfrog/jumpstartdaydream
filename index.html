@@ -41,6 +41,12 @@
     if (location.protocol !== 'https:' && location.hostname !== 'localhost' && location.hostname !== '127.0.0.1' && location.protocol !== 'file:') {
       location.replace(`https:${location.href.substring(location.protocol.length)}`);
     }
+    
+    // Auto-redirect to attendee page by default
+    // Only redirect if we're on the root path (not /organizer)
+    if (location.pathname === '/' || location.pathname === '/index.html') {
+      window.location.href = 'attendee/';
+    }
   </script>
 </body>
 </html>
